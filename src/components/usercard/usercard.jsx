@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import {
   Profile,
   Description,
@@ -12,15 +13,7 @@ import {
   Quantity,
 } from './usercard.styled';
 
-export const UserCard = ({
-  username,
-  tag,
-  location,
-  avatar,
-  followers,
-  views,
-  likes,
-}) => {
+export const UserCard = ({ username, tag, location, avatar, stats }) => {
   return (
     <Profile>
       <Description>
@@ -33,15 +26,15 @@ export const UserCard = ({
       <Stats>
         <StatsItem>
           <Label>Followers</Label>
-          <Quantity>{followers}</Quantity>
+          <Quantity>{stats.followers}</Quantity>
         </StatsItem>
         <StatsItem>
           <Label>Views</Label>
-          <Quantity>{views}</Quantity>
+          <Quantity>{stats.views}</Quantity>
         </StatsItem>
         <StatsItem>
           <Label>Likes</Label>
-          <Quantity>{likes}</Quantity>
+          <Quantity>{stats.likes}</Quantity>
         </StatsItem>
       </Stats>
     </Profile>
