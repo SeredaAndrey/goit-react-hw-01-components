@@ -1,17 +1,15 @@
 import styled from '@emotion/styled';
 
 export const StatisticConatiner = styled.section`
-  width: 400px;
+  width: 600px;
   height: fit-content;
 
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto 0 auto;
 
   border-radius: 10px;
 `;
 export const Title = styled.h2`
-  padding: 50px 75px;
+  padding: 30px 50px;
   margin: 0;
 
   border-top-left-radius: 10px;
@@ -41,8 +39,8 @@ export const StatList = styled.ul`
 export const StatItem = styled.li`
 display: flex;
 
-  width: calc(100% / 4);
-  height: 120px;
+  width: calc(100% / 5);
+  height: 80px;
 
   flex-direction: column;
 

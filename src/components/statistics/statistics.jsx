@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   StatisticConatiner,
   Title,
@@ -7,29 +8,35 @@ import {
   StatPercentage,
 } from './statistics.styled';
 
-export const Statistic = title => {
+export const Statistic = ({ title, stats }) => {
   return (
     <StatisticConatiner>
-      <Title>Upload stats</Title>
-
+      <Title>{title}</Title>
       <StatList>
-        <StatItem>
-          <StatLabel>.docx</StatLabel>
-          <StatPercentage>4%</StatPercentage>
-        </StatItem>
-        <StatItem>
-          <StatLabel>.mp3</StatLabel>
-          <StatPercentage>14%</StatPercentage>
-        </StatItem>
-        <StatItem>
-          <StatLabel>.pdf</StatLabel>
-          <StatPercentage>41%</StatPercentage>
-        </StatItem>
-        <StatItem>
-          <StatLabel>.mp4</StatLabel>
-          <StatPercentage>12%</StatPercentage>
-        </StatItem>
+        {stats.map(({ id, label, percentage }) => {
+          return (
+            <StatisticItem key={id} label={label} percentage={percentage} />
+          );
+        })}
       </StatList>
     </StatisticConatiner>
   );
+};
+
+const StatisticItem = ({ id, label, percentage }) => {
+  return (
+    <StatItem key={id}>
+      <StatLabel>{label}</StatLabel>
+      <StatPercentage>{percentage}</StatPercentage>
+    </StatItem>
+  );
+};
+
+Statistic.prototype = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }),
 };
