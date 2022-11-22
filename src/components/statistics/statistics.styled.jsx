@@ -7,13 +7,12 @@ export const StatisticConatiner = styled.section`
   margin: 50px auto 0 auto;
 
   border-radius: 10px;
+
+  overflow: hidden;
 `;
 export const Title = styled.h2`
   padding: 30px 50px;
   margin: 0;
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 
   font-family: 'Segoe UI';
   font-size: 24px;
@@ -32,9 +31,6 @@ export const StatList = styled.ul`
   padding: 0;
 
   display: flex;
-
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 
   background-color: rgb(136, 135, 135, 0.5);
 `;
