@@ -27,6 +27,17 @@ export const Item = styled.li`
     margin-bottom: 15px;
   }
 `;
+const setBGColor = props => {
+  switch (props.statusOnline) {
+    case 'true':
+      return '#0f0';
+    case 'false':
+      return '#f00';
+    default:
+      return 'rgb(234, 234, 234)';
+  }
+};
+
 export const Status = styled.span`
   width: 20px;
   height: 20px;
@@ -35,14 +46,9 @@ export const Status = styled.span`
 
   border-radius: 50%;
 
-  background-color: $props=> {
-    switch (props.isOnline) {
-      case'true': return green;
-      case'false': return red;
-      default: return rgb(234, 234, 234);
-    }
-  }
+  background-color: ${setBGColor};
 `;
+
 export const Avatar = styled.img`
   width: 70px;
   height: 70px;

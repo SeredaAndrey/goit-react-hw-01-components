@@ -27,7 +27,7 @@ export const FriendList = ({ friends }) => {
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <Item>
-      <Status status={isOnline}></Status>
+      <Status statusOnline={isOnline}></Status>
       <Avatar src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Item>
