@@ -27,14 +27,11 @@ export const Item = styled.li`
     margin-bottom: 15px;
   }
 `;
-const setBGColor = props => {
-  switch (props.statusOnline) {
-    case 'true':
-      return '#0f0';
-    case 'false':
-      return '#f00';
-    default:
-      return 'rgb(234, 234, 234)';
+const setBGColor = ({ statusOnline }) => {
+  if (statusOnline) {
+    return '#0f0';
+  } else {
+    return '#f00';
   }
 };
 
