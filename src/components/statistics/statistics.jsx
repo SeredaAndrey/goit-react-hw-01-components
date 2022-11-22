@@ -40,3 +40,9 @@ Statistic.prototype = {
     percentage: PropTypes.number.isRequired,
   }),
 };
+
+StatisticItem.prototype = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+};
