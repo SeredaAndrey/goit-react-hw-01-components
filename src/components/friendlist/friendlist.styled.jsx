@@ -51,14 +51,11 @@ export const Status = styled.span`
 
   border-radius: ${p => p.theme.radii.round};
 
-  background-color: ${({ statusOnline }) => {
-    if (statusOnline) {
-      return '#0f0';
-    } else {
-      return '#f00';
-    }
-  }};
+  background-color: ${p=>{
+  return p.statusOnline ? p.theme.color.online : p.theme.color.offline;}
+  }
 `;
+
 export const Avatar = styled.img`
   width: 70px;
   height: 70px;

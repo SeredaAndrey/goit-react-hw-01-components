@@ -7,8 +7,8 @@ export const theme = {
     primary: 'rgba(0, 0, 0, 0.8)',
     secondary: 'rgba(0, 0, 0, 0.5)',
     border: 'rgba(0, 0, 0, 0.1)',
-    // online: '#0f0',
-    // offline: '#f00',
+    online: '#0f0',
+    offline: '#f00',
   },
   sizes:{
     width: {
