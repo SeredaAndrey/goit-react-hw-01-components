@@ -4,21 +4,21 @@ export const Profile = styled.div`
   width: 600px;
   height: fit-content;
 
-  margin-top: 50px;
+  margin-top: ${p=>p.theme.space[5]}px;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: ${p=>p.theme.space[0]}px;
   margin-left: auto;
 
-  border-radius: 10px;
+  border-radius: ${p=>p.theme.radii.normal};
 `;
 export const Description = styled.div`
-  padding-top: 30px;
-  padding-right: 50px;
-  padding-bottom: 30px;
-  padding-left: 50px;
+  padding-top: ${p=>p.theme.space[5]}px;
+  padding-right: ${p=>p.theme.space[6]}px;
+  padding-bottom: ${p=>p.theme.space[5]}px;
+  padding-left: ${p=>p.theme.space[6]}px;
 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: ${p=>p.theme.radii.normal};
+  border-top-right-radius: ${p=>p.theme.radii.normal};
 
   background-color: rgb(234, 234, 234);
 `;
@@ -28,9 +28,9 @@ export const Avatar = styled.img`
   width: 200px;
   height: 200px;
 
-  margin-top: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: ${p=>p.theme.space[5]}px;
   margin-left: auto;
 
   border-radius: 50%;
@@ -38,15 +38,15 @@ export const Avatar = styled.img`
   background-color: #fff;
 `;
 export const Name = styled.p`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[4]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
@@ -57,15 +57,15 @@ export const Name = styled.p`
   color: rgba(0, 0, 0, 0.8);
 `;
 export const Tag = styled.p`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[4]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
@@ -76,15 +76,15 @@ export const Tag = styled.p`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const Location = styled.p`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[4]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
@@ -95,20 +95,20 @@ export const Location = styled.p`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const Stats = styled.ul`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[4]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   display: flex;
 
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: ${p=>p.theme.radii.normal};
+  border-bottom-right-radius: ${p=>p.theme.radii.normal};
 
   background-color: rgb(136, 135, 135, 0.5);
 `;
@@ -128,15 +128,15 @@ export const StatsItem = styled.li`
   border-right: 1px rgba(0, 0, 0, 0.1) solid;
 `;
 export const Label = styled.span`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 12px;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[4]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
@@ -147,15 +147,15 @@ export const Label = styled.span`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const Quantity = styled.span`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
