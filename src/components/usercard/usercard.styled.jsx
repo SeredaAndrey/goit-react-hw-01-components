@@ -20,7 +20,7 @@ export const Description = styled.div`
   border-top-left-radius: ${p=>p.theme.radii.normal};
   border-top-right-radius: ${p=>p.theme.radii.normal};
 
-  background-color: rgb(234, 234, 234);
+  background-color: ${p=>p.theme.color.background};
 `;
 export const Avatar = styled.img`
   display: block;
@@ -110,7 +110,7 @@ export const Stats = styled.ul`
   border-bottom-left-radius: ${p=>p.theme.radii.normal};
   border-bottom-right-radius: ${p=>p.theme.radii.normal};
 
-  background-color: rgb(136, 135, 135, 0.5);
+  background-color: ${p=>p.theme.color.backgroundAccent};
 `;
 export const StatsItem = styled.li`
   display: flex;

@@ -34,7 +34,7 @@ export const Title = styled.h2`
 
   color: rgba(0, 0, 0, 0.8);
 
-  background-color: rgb(234, 234, 234);
+  background-color: ${p=>p.theme.color.background};
 `;
 export const StatList = styled.ul`
   margin-top: ${p=>p.theme.space[0]}px;
@@ -49,7 +49,7 @@ export const StatList = styled.ul`
 
   display: flex;
 
-  background-color: rgb(136, 135, 135, 0.5);
+  background-color: ${p=>p.theme.color.backgroundAccent};
 `;
 export const StatItem = styled.li`
   display: flex;

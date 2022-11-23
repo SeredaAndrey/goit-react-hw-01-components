@@ -6,14 +6,14 @@ export const TransactionHistoryTable = styled.table`
 
   margin-top: ${p=>p.theme.space[5]}px;
   margin-right: auto;
-  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[5]}px;
   margin-left: auto;
 
   border-collapse: collapse;
 
   border-radius: ${p=>p.theme.radii.normal};
 
-  background-color: rgb(234, 234, 234);
+  background-color: ${p=>p.theme.color.background};
 
   overflow: hidden;
 `;
@@ -28,7 +28,7 @@ export const TableHead = styled.th`
 `;
 export const TableRowHead = styled.tr`
   height: 35px;
-  background-color: rgb(136, 135, 135, 0.5);
+  background-color: ${p=>p.theme.color.backgroundAccent};
 `;
 export const TableRowData = styled.tr`
   height: 25px;
@@ -38,7 +38,7 @@ export const TableRowData = styled.tr`
     background-color: rgb(136, 135, 135, 0.1);
   }
   &:nth-of-type(even) {
-    background-color: rgb(234, 234, 234);
+    background-color: ${p=>p.theme.color.background};
   }
   &:last-child {
     border-radius: ${p=>p.theme.radii.normal};

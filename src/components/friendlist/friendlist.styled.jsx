@@ -29,7 +29,7 @@ export const Item = styled.li`
 
   align-items: center;
 
-  background-color: rgb(234, 234, 234);
+  background-color: ${p=>p.theme.color.background};
 
   display: flex;
 
@@ -72,7 +72,7 @@ export const Avatar = styled.img`
 
   border-radius: ${p=>p.theme.radii.normal};
 
-  background-color: rgb(136, 135, 135, 0.5);
+  background-color: ${p=>p.theme.color.backgroundAccent};
 `;
 export const Name = styled.p`
   display: block;
