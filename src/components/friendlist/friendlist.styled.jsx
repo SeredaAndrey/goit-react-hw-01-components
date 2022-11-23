@@ -4,12 +4,26 @@ export const FriendListContainer = styled.ul`
   width: 600px;
   height: fit-content;
 
-  margin: 50px auto 0 auto;
-  padding 0;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 `;
 export const Item = styled.li`
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 
   border-radius: 10px;
 
@@ -27,30 +41,34 @@ export const Item = styled.li`
     margin-bottom: 15px;
   }
 `;
-const setBGColor = ({ statusOnline }) => {
-  if (statusOnline) {
-    return '#0f0';
-  } else {
-    return '#f00';
-  }
-};
-
 export const Status = styled.span`
   width: 20px;
   height: 20px;
 
-  margin: 0 0 0 50px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 50px;
 
   border-radius: 50%;
 
-  background-color: ${setBGColor};
+  background-color: ${({statusOnline}) =>{
+    if (statusOnline){
+      return '#0f0';
+    }
+    else {
+      return  '#f00';
+    }
+  }};
 `;
-
 export const Avatar = styled.img`
   width: 70px;
   height: 70px;
 
-  margin: 0 50px;
+  margin-top: 0;
+  margin-right: 50px;
+  margin-bottom: 0;
+  margin-left: 50px;
 
   border-radius: 10px;
 
@@ -59,8 +77,16 @@ export const Avatar = styled.img`
 export const Name = styled.p`
   display: block;
 
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
   text-align: center;
 
   font-family: 'Segoe UI';

@@ -4,7 +4,10 @@ export const TransactionHistoryTable = styled.table`
   width: 600px;
   height: fit-content;
 
-  margin: 50px auto 0 auto;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 
   border-collapse: collapse;
 

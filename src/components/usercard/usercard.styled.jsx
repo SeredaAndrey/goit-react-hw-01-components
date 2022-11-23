@@ -4,12 +4,18 @@ export const Profile = styled.div`
   width: 600px;
   height: fit-content;
 
-  margin: 50px auto 0 auto;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 
   border-radius: 10px;
 `;
 export const Description = styled.div`
-  padding: 30px 50px;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -22,15 +28,25 @@ export const Avatar = styled.img`
   width: 200px;
   height: 200px;
 
-  margin: 0 auto 50px auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
 
   border-radius: 50%;
 
   background-color: #fff;
 `;
 export const Name = styled.p`
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 
   text-align: center;
 
@@ -41,8 +57,16 @@ export const Name = styled.p`
   color: rgba(0, 0, 0, 0.8);
 `;
 export const Tag = styled.p`
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
   text-align: center;
 
   font-family: 'Segoe UI';
@@ -52,8 +76,16 @@ export const Tag = styled.p`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const Location = styled.p`
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
   text-align: center;
 
   font-family: 'Segoe UI';
@@ -63,8 +95,15 @@ export const Location = styled.p`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const Stats = styled.ul`
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 
   display: flex;
 
@@ -89,8 +128,16 @@ export const StatsItem = styled.li`
   border-right: 1px rgba(0, 0, 0, 0.1) solid;
 `;
 export const Label = styled.span`
-  margin: 0 0 12px 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 12px;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
   text-align: center;
 
   font-family: 'Segoe UI';
@@ -100,8 +147,16 @@ export const Label = styled.span`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const Quantity = styled.span`
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
   text-align: center;
 
   font-family: 'Segoe UI';
