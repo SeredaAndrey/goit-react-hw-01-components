@@ -4,14 +4,14 @@ export const TransactionHistoryTable = styled.table`
   width: 600px;
   height: fit-content;
 
-  margin-top: 50px;
+  margin-top: ${p=>p.theme.space[5]}px;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: ${p=>p.theme.space[0]}px;
   margin-left: auto;
 
   border-collapse: collapse;
 
-  border-radius: 10px;
+  border-radius: ${p=>p.theme.radii.normal};
 
   background-color: rgb(234, 234, 234);
 
@@ -41,7 +41,7 @@ export const TableRowData = styled.tr`
     background-color: rgb(234, 234, 234);
   }
   &:last-child {
-    border-radius: 10px;
+    border-radius: ${p=>p.theme.radii.normal};
   }
 `;
 export const TableData = styled.td`

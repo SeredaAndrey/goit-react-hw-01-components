@@ -4,28 +4,28 @@ export const FriendListContainer = styled.ul`
   width: 600px;
   height: fit-content;
 
-  margin-top: 50px;
+  margin-top: ${p=>p.theme.space[5]}px;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: ${p=>p.theme.space[0]}px;
   margin-left: auto;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 `;
 export const Item = styled.li`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
-  border-radius: 10px;
+  border-radius: ${p=>p.theme.radii.normal};
 
   align-items: center;
 
@@ -45,12 +45,12 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
 
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 50px;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[6]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[6]}px;
 
-  border-radius: 50%;
+  border-radius: ${p=>p.theme.radii.round};
 
   background-color: ${({statusOnline}) =>{
     if (statusOnline){
@@ -65,27 +65,27 @@ export const Avatar = styled.img`
   width: 70px;
   height: 70px;
 
-  margin-top: 0;
-  margin-right: 50px;
-  margin-bottom: 0;
-  margin-left: 50px;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[6]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px
+  margin-left: ${p=>p.theme.space[6]}px;
 
-  border-radius: 10px;
+  border-radius: ${p=>p.theme.radii.normal};
 
   background-color: rgb(136, 135, 135, 0.5);
 `;
 export const Name = styled.p`
   display: block;
 
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 

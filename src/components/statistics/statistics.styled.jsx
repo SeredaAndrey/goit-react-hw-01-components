@@ -4,25 +4,25 @@ export const StatisticConatiner = styled.section`
   width: 600px;
   height: fit-content;
 
-  margin-top: 50px;
+  margin-top: ${p=>p.theme.space[5]}px;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: ${p=>p.theme.space[0]}px;
   margin-left: auto;
 
-  border-radius: 10px;
+  border-radius: ${p=>p.theme.radii.normal};
 
   overflow: hidden;
 `;
 export const Title = styled.h2`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 30px;
-  padding-right: 50px;
-  padding-bottom: 30px;
-  padding-left: 50px;
+  padding-top: ${p=>p.theme.space[5]}px;
+  padding-right: ${p=>p.theme.space[6]}px;
+  padding-bottom: ${p=>p.theme.space[5]}px;
+  padding-left: ${p=>p.theme.space[6]}px;
 
   font-family: 'Segoe UI';
   font-size: 24px;
@@ -37,15 +37,15 @@ export const Title = styled.h2`
   background-color: rgb(234, 234, 234);
 `;
 export const StatList = styled.ul`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[0]}px
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   display: flex;
 
@@ -67,15 +67,15 @@ export const StatItem = styled.li`
   border-right: 1px rgba(0, 0, 0, 0.1) solid;
 `;
 export const StatLabel = styled.span`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 12px;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[4]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
@@ -86,15 +86,15 @@ export const StatLabel = styled.span`
   color: rgba(0, 0, 0, 0.5);
 `;
 export const StatPercentage = styled.span`
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-top: ${p=>p.theme.space[0]}px;
+  margin-right: ${p=>p.theme.space[0]}px;
+  margin-bottom: ${p=>p.theme.space[0]}px;
+  margin-left: ${p=>p.theme.space[0]}px;
 
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding-top: ${p=>p.theme.space[0]}px;
+  padding-right: ${p=>p.theme.space[0]}px;
+  padding-bottom: ${p=>p.theme.space[0]}px;
+  padding-left: ${p=>p.theme.space[0]}px;
 
   text-align: center;
 
