@@ -35,7 +35,7 @@ export const TableRowData = styled.tr`
   color: rgba(0, 0, 0, 0.8);
 
   &:nth-of-type(odd) {
-    background-color: rgb(136, 135, 135, 0.1);
+    background-color: ${p=>p.theme.color.backgroundTableAccent};
   }
   &:nth-of-type(even) {
     background-color: ${p=>p.theme.color.background};

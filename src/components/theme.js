@@ -3,6 +3,7 @@ export const theme = {
     text:'#000',
     background: 'rgb(234, 234, 234)',
     backgroundAccent: 'rgb(136, 135, 135, 0.5)',
+    backgroundTableAccent: 'rgb(136, 135, 135, 0.1)',
     primary: '#07c',
     secondary: '#05a',
     accent: '#609',
