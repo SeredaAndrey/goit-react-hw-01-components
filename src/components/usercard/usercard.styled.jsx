@@ -4,18 +4,18 @@ export const Profile = styled.div`
   width: 600px;
   height: fit-content;
 
-  margin-top: ${p => p.theme.space[5]}px;
-  margin-right: auto;
-  margin-bottom: ${p => p.theme.space[0]}px;
-  margin-left: auto;
+  margin-top: ${p => p.theme.space[5]};
+  margin-right: ${p => p.theme.space[9]};
+  margin-bottom: ${p => p.theme.space[0]};
+  margin-left: ${p => p.theme.space[9]};
 
   border-radius: ${p => p.theme.radii.normal};
 `;
 export const Description = styled.div`
-  padding-top: ${p => p.theme.space[5]}px;
-  padding-right: ${p => p.theme.space[6]}px;
-  padding-bottom: ${p => p.theme.space[5]}px;
-  padding-left: ${p => p.theme.space[6]}px;
+  padding-top: ${p => p.theme.space[5]};
+  padding-right: ${p => p.theme.space[6]};
+  padding-bottom: ${p => p.theme.space[5]};
+  padding-left: ${p => p.theme.space[6]};
 
   border-top-left-radius: ${p => p.theme.radii.normal};
   border-top-right-radius: ${p => p.theme.radii.normal};
@@ -28,25 +28,25 @@ export const Avatar = styled.img`
   width: 200px;
   height: 200px;
 
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: auto;
-  margin-bottom: ${p => p.theme.space[5]}px;
-  margin-left: auto;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[9]};
+  margin-bottom: ${p => p.theme.space[5]};
+  margin-left: ${p => p.theme.space[9]};
 
   border-radius: ${p => p.theme.radii.round};
 
-  background-color: #fff;
+  background-color: ${p => p.theme.color.backgroundWhite};
 `;
 export const Name = styled.p`
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: ${p => p.theme.space[0]}px;
-  margin-bottom: ${p => p.theme.space[4]}px;
-  margin-left: ${p => p.theme.space[0]}px;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[0]};
+  margin-bottom: ${p => p.theme.space[4]};
+  margin-left: ${p => p.theme.space[0]};
 
-  padding-top: ${p => p.theme.space[0]}px;
-  padding-right: ${p => p.theme.space[0]}px;
-  padding-bottom: ${p => p.theme.space[0]}px;
-  padding-left: ${p => p.theme.space[0]}px;
+  padding-top: ${p => p.theme.space[0]};
+  padding-right: ${p => p.theme.space[0]};
+  padding-bottom: ${p => p.theme.space[0]};
+  padding-left: ${p => p.theme.space[0]};
 
   text-align: center;
 
@@ -54,18 +54,18 @@ export const Name = styled.p`
   font-size: ${p => p.theme.fontSizes.l}px;
   font-weight: ${p => p.theme.fontWeights.bold};
 
-  color: rgba(0, 0, 0, 0.8);
+  color: ${p => p.theme.color.primary};
 `;
 export const Tag = styled.p`
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: ${p => p.theme.space[0]}px;
-  margin-bottom: ${p => p.theme.space[4]}px;
-  margin-left: ${p => p.theme.space[0]}px;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[0]};
+  margin-bottom: ${p => p.theme.space[4]};
+  margin-left: ${p => p.theme.space[0]};
 
-  padding-top: ${p => p.theme.space[0]}px;
-  padding-right: ${p => p.theme.space[0]}px;
-  padding-bottom: ${p => p.theme.space[0]}px;
-  padding-left: ${p => p.theme.space[0]}px;
+  padding-top: ${p => p.theme.space[0]};
+  padding-right: ${p => p.theme.space[0]};
+  padding-bottom: ${p => p.theme.space[0]};
+  padding-left: ${p => p.theme.space[0]};
 
   text-align: center;
 
@@ -73,18 +73,18 @@ export const Tag = styled.p`
   font-size: ${p => p.theme.fontSizes.l}px;
   font-weight: ${p => p.theme.fontWeights.normal};
 
-  color: rgba(0, 0, 0, 0.5);
+  color: ${p => p.theme.color.secondary};
 `;
 export const Location = styled.p`
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: ${p => p.theme.space[0]}px;
-  margin-bottom: ${p => p.theme.space[4]}px;
-  margin-left: ${p => p.theme.space[0]}px;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[0]};
+  margin-bottom: ${p => p.theme.space[4]};
+  margin-left: ${p => p.theme.space[0]};
 
-  padding-top: ${p => p.theme.space[0]}px;
-  padding-right: ${p => p.theme.space[0]}px;
-  padding-bottom: ${p => p.theme.space[0]}px;
-  padding-left: ${p => p.theme.space[0]}px;
+  padding-top: ${p => p.theme.space[0]};
+  padding-right: ${p => p.theme.space[0]};
+  padding-bottom: ${p => p.theme.space[0]};
+  padding-left: ${p => p.theme.space[0]};
 
   text-align: center;
 
@@ -92,18 +92,18 @@ export const Location = styled.p`
   font-size: ${p => p.theme.fontSizes.l}px;
   font-weight: ${p => p.theme.fontWeights.normal};
 
-  color: rgba(0, 0, 0, 0.5);
+  color: ${p => p.theme.color.secondary};
 `;
 export const Stats = styled.ul`
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: ${p => p.theme.space[0]}px;
-  margin-bottom: ${p => p.theme.space[4]}px;
-  margin-left: ${p => p.theme.space[0]}px;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[0]};
+  margin-bottom: ${p => p.theme.space[4]};
+  margin-left: ${p => p.theme.space[0]};
 
-  padding-top: ${p => p.theme.space[0]}px;
-  padding-right: ${p => p.theme.space[0]}px;
-  padding-bottom: ${p => p.theme.space[0]}px;
-  padding-left: ${p => p.theme.space[0]}px;
+  padding-top: ${p => p.theme.space[0]};
+  padding-right: ${p => p.theme.space[0]};
+  padding-bottom: ${p => p.theme.space[0]};
+  padding-left: ${p => p.theme.space[0]};
 
   display: flex;
 
@@ -125,18 +125,19 @@ export const StatsItem = styled.li`
   justify-content: center;
 
   &:not(:last-child) {
-  border-right: 1px rgba(0, 0, 0, 0.1) solid;
+  border-right: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.color.border};
 `;
 export const Label = styled.span`
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: ${p => p.theme.space[0]}px;
-  margin-bottom: ${p => p.theme.space[4]}px;
-  margin-left: ${p => p.theme.space[0]}px;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[0]};
+  margin-bottom: ${p => p.theme.space[4]};
+  margin-left: ${p => p.theme.space[0]};
 
-  padding-top: ${p => p.theme.space[0]}px;
-  padding-right: ${p => p.theme.space[0]}px;
-  padding-bottom: ${p => p.theme.space[0]}px;
-  padding-left: ${p => p.theme.space[0]}px;
+  padding-top: ${p => p.theme.space[0]};
+  padding-right: ${p => p.theme.space[0]};
+  padding-bottom: ${p => p.theme.space[0]};
+  padding-left: ${p => p.theme.space[0]};
 
   text-align: center;
 
@@ -144,18 +145,18 @@ export const Label = styled.span`
   font-size: ${p => p.theme.fontSizes.ml}px;
   font-weight: ${p => p.theme.fontWeights.normal};
 
-  color: rgba(0, 0, 0, 0.5);
+  color: ${p => p.theme.color.secondary};
 `;
 export const Quantity = styled.span`
-  margin-top: ${p => p.theme.space[0]}px;
-  margin-right: ${p => p.theme.space[0]}px;
-  margin-bottom: ${p => p.theme.space[0]}px;
-  margin-left: ${p => p.theme.space[0]}px;
+  margin-top: ${p => p.theme.space[0]};
+  margin-right: ${p => p.theme.space[0]};
+  margin-bottom: ${p => p.theme.space[0]};
+  margin-left: ${p => p.theme.space[0]};
 
-  padding-top: ${p => p.theme.space[0]}px;
-  padding-right: ${p => p.theme.space[0]}px;
-  padding-bottom: ${p => p.theme.space[0]}px;
-  padding-left: ${p => p.theme.space[0]}px;
+  padding-top: ${p => p.theme.space[0]};
+  padding-right: ${p => p.theme.space[0]};
+  padding-bottom: ${p => p.theme.space[0]};
+  padding-left: ${p => p.theme.space[0]};
 
   text-align: center;
 
@@ -163,5 +164,5 @@ export const Quantity = styled.span`
   font-size: ${p => p.theme.fontSizes.ml}px;
   font-weight: ${p => p.theme.fontWeights.bold};
 
-  color: rgba(0, 0, 0, 0.8);
+  color: ${p => p.theme.color.primary};
 `;

@@ -4,10 +4,10 @@ export const TransactionHistoryTable = styled.table`
   width: 600px;
   height: fit-content;
 
-  margin-top: ${p => p.theme.space[5]}px;
-  margin-right: auto;
-  margin-bottom: ${p => p.theme.space[5]}px;
-  margin-left: auto;
+  margin-top: ${p => p.theme.space[5]};
+  margin-right: ${p => p.theme.space[9]};
+  margin-bottom: ${p => p.theme.space[5]};
+  margin-left: ${p => p.theme.space[9]};
 
   border-collapse: collapse;
 
@@ -24,7 +24,7 @@ export const TableHead = styled.th`
 
   text-align: center;
 
-  color: rgba(0, 0, 0, 0.5);
+  color: ${p => p.theme.color.secondary};
 `;
 export const TableRowHead = styled.tr`
   height: 35px;
@@ -32,7 +32,7 @@ export const TableRowHead = styled.tr`
 `;
 export const TableRowData = styled.tr`
   height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: ${p => p.theme.color.primary};
 
   &:nth-of-type(odd) {
     background-color: ${p => p.theme.color.backgroundTableAccent};
