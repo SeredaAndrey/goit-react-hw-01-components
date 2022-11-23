@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const FriendListContainer = styled.ul`
-  width: 600px;
-  height: fit-content;
+  width: ${p=>p.theme.sizes.width.container};
+  height: ${p=>p.theme.sizes.height.container};
 
   margin-top: ${p => p.theme.space[5]};
   margin-right: ${p => p.theme.space[9]};
@@ -33,17 +33,16 @@ export const Item = styled.li`
 
   display: flex;
 
-  width: 100%;
-  height: 80px;
+  height: ${p=>p.theme.sizes.height.friendsItem};
 
   list-style-type: none;
   &:not(:last-child) {
-    margin-bottom: ${p => p.theme.space[4]}px;
+    margin-bottom: ${p => p.theme.space[4]};
   }
 `;
 export const Status = styled.span`
-  width: 20px;
-  height: 20px;
+  width: ${p=>p.theme.sizes.width.statusSpan};
+  height: ${p=>p.theme.sizes.height.statusSpan};
 
   margin-top: ${p => p.theme.space[0]};
   margin-right: ${p => p.theme.space[6]};

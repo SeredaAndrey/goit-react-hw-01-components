@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const StatisticConatiner = styled.section`
-  width: 600px;
-  height: fit-content;
+  width: ${p=>p.theme.sizes.width.container};
+  height: ${p=>p.theme.sizes.height.container};
 
   margin-top: ${p => p.theme.space[5]};
   margin-right: ${p => p.theme.space[9]};
@@ -54,8 +54,8 @@ export const StatList = styled.ul`
 export const StatItem = styled.li`
   display: flex;
 
-  width: calc(100% / 5);
-  height: 80px;
+  width: ${p=>p.theme.sizes.width.statisticUser};
+  height: ${p=>p.theme.sizes.height.statisticUser};
 
   flex-direction: column;
 

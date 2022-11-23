@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const TransactionHistoryTable = styled.table`
-  width: 600px;
-  height: fit-content;
+  width: ${p=>p.theme.sizes.width.container};
+  height: ${p=>p.theme.sizes.height.container};
 
   margin-top: ${p => p.theme.space[5]};
   margin-right: ${p => p.theme.space[9]};
@@ -27,11 +27,11 @@ export const TableHead = styled.th`
   color: ${p => p.theme.color.secondary};
 `;
 export const TableRowHead = styled.tr`
-  height: 35px;
+  height: ${p=>p.theme.sizes.height.tableHead};
   background-color: ${p => p.theme.color.backgroundAccent};
 `;
 export const TableRowData = styled.tr`
-  height: 25px;
+  height: ${p=>p.theme.sizes.height.tableData};
   color: ${p => p.theme.color.primary};
 
   &:nth-of-type(odd) {

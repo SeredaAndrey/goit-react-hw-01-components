@@ -10,6 +10,25 @@ export const theme = {
     // online: '#0f0',
     // offline: '#f00',
   },
+  sizes:{
+    width: {
+      container: '600px',
+      userPhoto: '200px',
+      statusUser: 'calc(100% / 3)',
+      statusSpan:'20px',
+      statisticUser: 'calc(100% / 5)',
+    },
+    height:{
+      container: 'fit-content',
+      userPhoto: '200px',
+      statusUser: '80px',
+      statusSpan:'20px',
+      friendsItem: '80px',
+      statisticUser: '80px',
+      tableHead: '35px',
+      tableData: '25px',
+    }
+  },
   space: [
     0,
     '2px',

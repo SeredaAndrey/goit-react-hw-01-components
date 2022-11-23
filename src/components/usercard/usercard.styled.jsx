@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Profile = styled.div`
-  width: 600px;
-  height: fit-content;
+  width: ${p=>p.theme.sizes.width.container};
+  height: ${p=>p.theme.sizes.height.container};
 
   margin-top: ${p => p.theme.space[5]};
   margin-right: ${p => p.theme.space[9]};
@@ -25,8 +25,8 @@ export const Description = styled.div`
 export const Avatar = styled.img`
   display: block;
 
-  width: 200px;
-  height: 200px;
+  width: ${p=>p.theme.sizes.width.userPhoto};
+  height: ${p=>p.theme.sizes.height.userPhoto};
 
   margin-top: ${p => p.theme.space[0]};
   margin-right: ${p => p.theme.space[9]};
@@ -115,8 +115,8 @@ export const Stats = styled.ul`
 export const StatsItem = styled.li`
   display: flex;
 
-  width: calc(100% / 3);
-  height: 80px;
+  width: ${p => p.theme.sizes.width.statusUser};
+  height: ${p=>p.theme.sizes.height.statusUser};
 
   flex-direction: column;
 
